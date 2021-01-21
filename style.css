@@ -1,0 +1,144 @@
+body {
+/*  margin-left: 50px;
+  margin-top: 40px;*/
+  font-family: "Courier";
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+a{
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.firstpage{
+	position: absolute;
+	margin-left: 85%;
+	margin-top: 45%;
+}
+
+.credits{
+	position: absolute;
+	margin-left: 0%;
+	margin-right: 82%;
+	margin-top: 45%;
+}
+
+.extrafirst{
+	position: absolute;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 15%;
+}
+
+.extrasecond{
+	position: absolute;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 30%;
+}
+
+.extra{
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	position:fixed;
+	margin-left: 83%;
+}
+
+.secondpage{
+	position: fixed;
+	margin-left: 85%;
+	margin-top: 15%;
+}
+
+.firstevent{
+font-size: 30px;
+margin-left:30%;
+margin-top:20%;
+
+}
+
+.secondevent{
+margin-left:200px;
+margin-top:250px;
+}
+
+.thirdevent{
+position: relative;
+margin-left:800px;
+margin-top:0px;
+}
+
+.forthevent{
+margin-left:900px;
+margin-top:100px;
+}
+
+.draggable{
+float: inherit;
+position: relative; 
+display: inline-block;
+width: 5px;
+height: 5px; 
+padding: 1em;
+/*box-shadow: -2px -2px 20px white;*/
+}
+
+.draggable .button{
+/*display: none;*/  
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  background-color: #fff;
+  padding: 0.5em;
+}
+.play .hiddenpop{
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+}
+.draggable:hover .button{
+  display: inline;
+
+}
+
+.play:hover .hiddenpop{
+	  visibility: visible;
+}
+
+.button {
+	margin-left: 5%;
+	margin: 15px 0;
+	padding: 10px;
+	background-color: black !important;
+	color: white;
+	display: inline-block;
+	position: relative;
+}
+
+.button.playing:hover {
+	background-color: grey;
+}
+
+button{
+background-color: purple;
+color: white;
+border-radius: 85%;
+transition: all 0.6s;
+position: absolute;
+cursor: move;
+}
+
+button:hover{
+transform: scale(1.3);
+}
